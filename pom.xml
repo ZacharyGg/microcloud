@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>cn.hlxd</groupId>
+    <artifactId>microcloud</artifactId>
+    <version>1.0-SNAPSHOT</version>
+    <modules>
+        <module>microcloud-eureka-server</module>
+        <module>microcloud-provider-dept</module>
+        <module>microcloud-consumer-client</module>
+        <module>microcloud-user-security</module>
+        <module>microcloud-oauth-server1</module>
+        <module>microcloud-oauth-client</module>
+        <module>microcloud-oauth-ser</module>
+        <module>microcloud-oauth-token</module>
+        <module>microcloud-oauth-authorization</module>
+        <module>microcloud-authorization-server</module>
+        <module>microcloud-hlxd-common</module>
+        <module>microcloud-zuul-gateway</module>
+        <module>microcloud-oauth</module>
+        <module>microcloud-oauth-service</module>
+        <module>oauth-server</module>
+        <module>oauth-client</module>
+    </modules>
+    <packaging>pom</packaging>
+
+    <name>microcloud</name>
+    <!-- FIXME change it to the project's website -->
+    <url>http://www.hualongxunda.com</url>
+
+    <properties>
+        <jdk.version>1.8</jdk.version>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <maven.compiler.source>1.7</maven.compiler.source>
+        <maven.compiler.target>1.7</maven.compiler.target>
+    </properties>
+    <dependencyManagement>
+        <dependencies>
+            <dependency>    <!-- 进行SpringCloud依赖包的导入处理 -->
+                <groupId>org.springframework.cloud</groupId>
+                <artifactId>spring-cloud-dependencies</artifactId>
+                <version>Edgware.SR3</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+            <dependency>    <!-- SpringCloud离不开SpringBoot，所以必须要配置此依赖包 -->
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-dependencies</artifactId>
+                <version>1.5.4.RELEASE</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+            <dependency>
+                <groupId>mysql</groupId>
+                <artifactId>mysql-connector-java</artifactId>
+                <version>5.0.4</version>
+            </dependency>
+            <dependency>
+                <groupId>com.alibaba</groupId>
+                <artifactId>druid</artifactId>
+                <version>1.1.0</version>
+            </dependency>
+            <dependency>
+                <groupId>org.mybatis.spring.boot</groupId>
+                <artifactId>mybatis-spring-boot-starter</artifactId>
+                <version>1.3.0</version>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+    <build>
+        <finalName>microcloud</finalName>
+        <resources>
+            <resource>
+                <directory>src/main/resources</directory>
+                <filtering>true</filtering>
+            </resource>
+        </resources>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-surefire-plugin</artifactId>
+                <version>2.18.1</version>
+                <configuration>
+                    <skipTests>true</skipTests>
+                </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-resources-plugin</artifactId>
+                <configuration>
+                    <delimiters>
+                        <delimiter>$</delimiter>
+                    </delimiters>
+                </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.3</version>
+                <configuration>
+                    <source>${jdk.version}</source><!-- 源代码使用的开发版本 -->
+                    <target>${jdk.version}</target><!-- 需要生成的目标class文件的编译版本 -->
+                    <encoding>${project.build.sourceEncoding}</encoding>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+</project>

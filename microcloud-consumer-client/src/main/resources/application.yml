@@ -1,0 +1,17 @@
+server:
+  port: 8080
+eureka:
+  client:
+    service-url:
+      defaultZone: http://edmin:edmin@eurekaserver.com:7001/eureka
+  instance:
+    prefer-ip-address: true
+    instance-id:  cusumer.com
+
+
+info:
+  app.name: www.cusumer.com
+  company.name: hlxd
+  build.groupId: $project.groupId$
+  build.artifactId: $project.artifactId$
+  app.version: V33.3.3

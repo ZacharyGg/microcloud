@@ -1,0 +1,38 @@
+server:
+  port: 10001
+  context-path: /hlxd
+spring:
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource
+    url: jdbc:mysql://localhost:3306/security
+    username: root
+    password: 123456
+    driver-class-name: com.mysql.jdbc.Driver
+    dbcp2:
+      min-idle: 5
+      initial-size: 5
+      max-total: 5
+      max-wait-millis: 200
+  application:
+    name: microcloud-oauth-service
+  output:
+    ansi:
+      enabled: always
+eureka:
+  client:
+    service-url:
+      defaultZone: http://edmin:edmin@eurekaserver.com:7001/eureka
+  instance:
+    instance-id: oauth-service
+    prefer-ip-address: true
+security:
+  sessions: stateless
+  oauth2:
+    resource:
+      loadBalanced: true #必须要有
+      id: user
+      user-info-uri: http://MICROCLOUD-OAUTH/hlxd/user # auth-server 是注册到eureka的服务名称
+      prefer-token-info: false
+  user:
+    name: admin
+    password: admin

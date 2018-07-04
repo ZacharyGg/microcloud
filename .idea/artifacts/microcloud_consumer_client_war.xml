@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="microcloud-consumer-client:war">
+    <output-path>$PROJECT_DIR$/microcloud-consumer-client/target</output-path>
+    <root id="archive" name="microcloud-consumer-client.war">
+      <element id="artifact" artifact-name="microcloud-consumer-client:war exploded" />
+    </root>
+  </artifact>
+</component>

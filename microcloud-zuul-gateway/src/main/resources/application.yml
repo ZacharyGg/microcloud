@@ -1,0 +1,31 @@
+server:
+  port: 9501
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://edmin:edmin@eurekaserver.com:7001/eureka
+  instance:
+    instance-id: zuulporxy.com
+    prefer-ip-address: true
+
+
+zuul:
+  ignoredServices: '*'
+  routes:
+    microcloud-oauth-service: /pro/**
+    microcloud-oauth:
+      path: /hlxd/**
+      serviceId: microcloud-oauth
+      sensitiveHeaders:
+      strip-prefix: false
+spring:
+  output:
+    ansi:
+      enabled: always
+  application:
+    name: microcloud-zull-gateway
+security:
+  user:
+    name: zdmin
+    password: zdmin

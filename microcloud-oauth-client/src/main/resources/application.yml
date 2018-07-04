@@ -1,0 +1,27 @@
+server:
+  port: 8009
+
+
+#监控断点配置
+management:
+  security:
+    enabled: false
+endpoints:
+  actuator:
+    enabled: true
+  shutdown:
+    enabled: false
+
+security:
+  oauth2:
+    client:
+      client-id: admin
+      client-secret: admin
+      access-token-uri: http://localhost:9001/oauth/token
+      user-authorization-uri: http://localhost:9001/oauth/authorize
+      scope: server
+    resource:
+      jwt:
+        key-uri: http://localhost:9001/oauth/token_key
+
+

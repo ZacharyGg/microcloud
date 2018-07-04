@@ -1,0 +1,13 @@
+server:
+  port: 7001
+eureka:
+  instance:
+    hostname: eurekaserver.com
+    instance-id: eurekaserver.com
+    prefer-ip-address: true
+  client:
+      register-with-eureka: false
+      fetch-registry: false
+spring:
+  application:
+    name: eureka-server

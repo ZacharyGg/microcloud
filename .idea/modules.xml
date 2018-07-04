@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/microcloud.iml" filepath="$PROJECT_DIR$/microcloud.iml" />
+      <module fileurl="file://$PROJECT_DIR$/microcloud-authorization-server/microcloud-authorization-server.iml" filepath="$PROJECT_DIR$/microcloud-authorization-server/microcloud-authorization-server.iml" />
+      <module fileurl="file://$PROJECT_DIR$/microcloud-consumer-client/microcloud-consumer-client.iml" filepath="$PROJECT_DIR$/microcloud-consumer-client/microcloud-consumer-client.iml" />
+      <module fileurl="file://$PROJECT_DIR$/microcloud-eureka-server/microcloud-eureka-server.iml" filepath="$PROJECT_DIR$/microcloud-eureka-server/microcloud-eureka-server.iml" />
+      <module fileurl="file://$PROJECT_DIR$/microcloud-hlxd-common/microcloud-hlxd-common.iml" filepath="$PROJECT_DIR$/microcloud-hlxd-common/microcloud-hlxd-common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/microcloud-oauth/microcloud-oauth.iml" filepath="$PROJECT_DIR$/microcloud-oauth/microcloud-oauth.iml" />
+      <module fileurl="file://$PROJECT_DIR$/microcloud-oauth-authorization/microcloud-oauth-authorization.iml" filepath="$PROJECT_DIR$/microcloud-oauth-authorization/microcloud-oauth-authorization.iml" />
+      <module fileurl="file://$PROJECT_DIR$/microcloud-oauth-client/microcloud-oauth-client.iml" filepath="$PROJECT_DIR$/microcloud-oauth-client/microcloud-oauth-client.iml" />
+      <module fileurl="file://$PROJECT_DIR$/microcloud-oauth-ser/microcloud-oauth-ser.iml" filepath="$PROJECT_DIR$/microcloud-oauth-ser/microcloud-oauth-ser.iml" />
+      <module fileurl="file://$PROJECT_DIR$/microcloud-oauth-server1/microcloud-oauth-server1.iml" filepath="$PROJECT_DIR$/microcloud-oauth-server1/microcloud-oauth-server1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/microcloud-oauth-service/microcloud-oauth-service.iml" filepath="$PROJECT_DIR$/microcloud-oauth-service/microcloud-oauth-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/microcloud-oauth-token/microcloud-oauth-token.iml" filepath="$PROJECT_DIR$/microcloud-oauth-token/microcloud-oauth-token.iml" />
+      <module fileurl="file://$PROJECT_DIR$/microcloud-provider-dept/microcloud-provider-dept.iml" filepath="$PROJECT_DIR$/microcloud-provider-dept/microcloud-provider-dept.iml" />
+      <module fileurl="file://$PROJECT_DIR$/microcloud-user-security/microcloud-user-security.iml" filepath="$PROJECT_DIR$/microcloud-user-security/microcloud-user-security.iml" />
+      <module fileurl="file://$PROJECT_DIR$/microcloud-zuul-gateway/microcloud-zuul-gateway.iml" filepath="$PROJECT_DIR$/microcloud-zuul-gateway/microcloud-zuul-gateway.iml" />
+      <module fileurl="file://$PROJECT_DIR$/oauth-client/oauth-client.iml" filepath="$PROJECT_DIR$/oauth-client/oauth-client.iml" />
+      <module fileurl="file://$PROJECT_DIR$/oauth-server/oauth-server.iml" filepath="$PROJECT_DIR$/oauth-server/oauth-server.iml" />
+    </modules>
+  </component>
+</project>

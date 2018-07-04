@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="microcloud-authorization-server" />
+        <module name="microcloud-consumer-client" />
+        <module name="microcloud-eureka-server" />
+        <module name="microcloud-hlxd-common" />
+        <module name="microcloud-oauth" />
+        <module name="microcloud-oauth-authorization" />
+        <module name="microcloud-oauth-client" />
+        <module name="microcloud-oauth-ser" />
+        <module name="microcloud-oauth-server" />
+        <module name="microcloud-oauth-server1" />
+        <module name="microcloud-oauth-service" />
+        <module name="microcloud-oauth-token" />
+        <module name="microcloud-provider-dept" />
+        <module name="microcloud-user-security" />
+        <module name="microcloud-zuul-gateway" />
+        <module name="microcloudeurekaserver" />
+        <module name="oauth-client" />
+        <module name="oauth-server" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="microcloud" target="1.8" />
+      <module name="microcloud-authorization-server" target="1.8" />
+      <module name="microcloud-consumer-client" target="1.8" />
+      <module name="microcloud-eureka-server" target="1.8" />
+      <module name="microcloud-hlxd-common" target="1.8" />
+      <module name="microcloud-oauth" target="1.8" />
+      <module name="microcloud-oauth-authorization" target="1.8" />
+      <module name="microcloud-oauth-client" target="1.8" />
+      <module name="microcloud-oauth-ser" target="1.8" />
+      <module name="microcloud-oauth-server" target="1.8" />
+      <module name="microcloud-oauth-server1" target="1.8" />
+      <module name="microcloud-oauth-service" target="1.8" />
+      <module name="microcloud-oauth-token" target="1.8" />
+      <module name="microcloud-provider-dept" target="1.8" />
+      <module name="microcloud-user-security" target="1.8" />
+      <module name="microcloud-zuul-gateway" target="1.8" />
+      <module name="microcloudconsumerclient" target="1.8" />
+      <module name="microcloudeurekaserver" target="1.8" />
+      <module name="microcloudoauthserver" target="1.8" />
+      <module name="oauth-client" target="1.8" />
+      <module name="oauth-server" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>
